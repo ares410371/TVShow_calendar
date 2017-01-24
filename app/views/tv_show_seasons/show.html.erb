@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tv show internal:</strong>
+  <%= @tv_show_season.tv_show_internal %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tv_show_season.name %>
+</p>
+
+<p>
+  <strong>Overview:</strong>
+  <%= @tv_show_season.overview %>
+</p>
+
+<p>
+  <strong>Season number:</strong>
+  <%= @tv_show_season.season_number %>
+</p>
+
+<p>
+  <strong>Air date:</strong>
+  <%= @tv_show_season.air_date %>
+</p>
+
+<p>
+  <strong>Poster path:</strong>
+  <%= @tv_show_season.poster_path %>
+</p>
+
+<%= link_to 'Edit', edit_tv_show_season_path(@tv_show_season) %> |
+<%= link_to 'Back', tv_show_seasons_path %>

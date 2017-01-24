@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tv Shows</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tv show internal</th>
+      <th>Name</th>
+      <th>Overview</th>
+      <th>Poster path</th>
+      <th>Backdrop path</th>
+      <th>Number of seasons</th>
+      <th>Number of episodes</th>
+      <th>Original language</th>
+      <th>Homepage</th>
+      <th>First air date</th>
+      <th>Last air date</th>
+      <th>Episode run time</th>
+      <th>Vote average</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tv_shows.each do |tv_show| %>
+      <tr>
+        <td><%= tv_show.tv_show_internal %></td>
+        <td><%= tv_show.name %></td>
+        <td><%= tv_show.overview %></td>
+        <td><%= tv_show.poster_path %></td>
+        <td><%= tv_show.backdrop_path %></td>
+        <td><%= tv_show.number_of_seasons %></td>
+        <td><%= tv_show.number_of_episodes %></td>
+        <td><%= tv_show.original_language %></td>
+        <td><%= tv_show.homepage %></td>
+        <td><%= tv_show.first_air_date %></td>
+        <td><%= tv_show.last_air_date %></td>
+        <td><%= tv_show.episode_run_time %></td>
+        <td><%= tv_show.vote_average %></td>
+        <td><%= tv_show.status %></td>
+        <td><%= link_to 'Show', tv_show %></td>
+        <td><%= link_to 'Edit', edit_tv_show_path(tv_show) %></td>
+        <td><%= link_to 'Destroy', tv_show, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tv Show', new_tv_show_path %>

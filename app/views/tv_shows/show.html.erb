@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tv show internal:</strong>
+  <%= @tv_show.tv_show_internal %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tv_show.name %>
+</p>
+
+<p>
+  <strong>Overview:</strong>
+  <%= @tv_show.overview %>
+</p>
+
+<p>
+  <strong>Poster path:</strong>
+  <%= @tv_show.poster_path %>
+</p>
+
+<p>
+  <strong>Backdrop path:</strong>
+  <%= @tv_show.backdrop_path %>
+</p>
+
+<p>
+  <strong>Number of seasons:</strong>
+  <%= @tv_show.number_of_seasons %>
+</p>
+
+<p>
+  <strong>Number of episodes:</strong>
+  <%= @tv_show.number_of_episodes %>
+</p>
+
+<p>
+  <strong>Original language:</strong>
+  <%= @tv_show.original_language %>
+</p>
+
+<p>
+  <strong>Homepage:</strong>
+  <%= @tv_show.homepage %>
+</p>
+
+<p>
+  <strong>First air date:</strong>
+  <%= @tv_show.first_air_date %>
+</p>
+
+<p>
+  <strong>Last air date:</strong>
+  <%= @tv_show.last_air_date %>
+</p>
+
+<p>
+  <strong>Episode run time:</strong>
+  <%= @tv_show.episode_run_time %>
+</p>
+
+<p>
+  <strong>Vote average:</strong>
+  <%= @tv_show.vote_average %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @tv_show.status %>
+</p>
+
+<%= link_to 'Edit', edit_tv_show_path(@tv_show) %> |
+<%= link_to 'Back', tv_shows_path %>

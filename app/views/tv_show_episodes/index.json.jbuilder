@@ -1,0 +1,1 @@
+json.array! @tv_show_episodes, partial: 'tv_show_episodes/tv_show_episode', as: :tv_show_episode

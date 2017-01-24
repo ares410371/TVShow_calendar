@@ -1,0 +1,2 @@
+json.extract! tv_show, :id, :tv_show_internal, :name, :overview, :poster_path, :backdrop_path, :number_of_seasons, :number_of_episodes, :original_language, :homepage, :first_air_date, :last_air_date, :episode_run_time, :vote_average, :status, :created_at, :updated_at
+json.url tv_show_url(tv_show, format: :json)

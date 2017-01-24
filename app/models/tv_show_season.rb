@@ -1,0 +1,2 @@
+class TvShowSeason < ApplicationRecord
+end

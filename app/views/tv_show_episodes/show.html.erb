@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tv show internal:</strong>
+  <%= @tv_show_episode.tv_show_internal %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tv_show_episode.name %>
+</p>
+
+<p>
+  <strong>Overview:</strong>
+  <%= @tv_show_episode.overview %>
+</p>
+
+<p>
+  <strong>Season number:</strong>
+  <%= @tv_show_episode.season_number %>
+</p>
+
+<p>
+  <strong>Episode number:</strong>
+  <%= @tv_show_episode.episode_number %>
+</p>
+
+<p>
+  <strong>Air date:</strong>
+  <%= @tv_show_episode.air_date %>
+</p>
+
+<p>
+  <strong>Still path:</strong>
+  <%= @tv_show_episode.still_path %>
+</p>
+
+<p>
+  <strong>Vote average:</strong>
+  <%= @tv_show_episode.vote_average %>
+</p>
+
+<%= link_to 'Edit', edit_tv_show_episode_path(@tv_show_episode) %> |
+<%= link_to 'Back', tv_show_episodes_path %>
